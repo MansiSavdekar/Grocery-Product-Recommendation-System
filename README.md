@@ -10,9 +10,7 @@ Flatiron Data Science Project - Capstone
          
 <!---Photo by Kevork Kurdoghlian on Unsplash--->       
 <!---<span>Photo by <a href="https://unsplash.com/@pedroplus?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Pedro da Silva</a> on <a href="https://unsplash.com/s/photos/stop-sign?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>--->
-Prepared and Presented by:  **_Melody Peterson_**   
-[Presentation PDF](https://github.com/melodygr/capstone_recommendation/blob/main/Grocery%20MVP.pdf "Presentation PDF")  
-[Blog Post](https://medium.com/codex/creating-a-multifaceted-grocery-recommender-system-c394208f5e0b "Medium Blog Post")  
+Prepared by:  **_Mansi Savdekar_**  
 
 ### Business Problem    
 For this analysis I will be working as a Data Scientist for a grocery store that is looking to discover insights from sales data that could be used for targeted direct mail marketing (specific coupons mailed to customers), targeted email marketing ("An item you like has gone on sale!"), and online shopper recommendations to 'add to cart' based on similar items and also based on items other people who bought that item have purchased.  
@@ -125,13 +123,8 @@ Finally, this output shows what products are recommended to each cluster if they
          align="center"
          width="400" height="400"> 
 
-
-### FLASK app  
-[View the FLASK app](https://github.com/melodygr/grocery_recommendation/tree/main/flask_app "FLASK app")  
   
 I have begun the development of a FLASK app to generate grocery recommendations through a website.  It currently has four pages: the index, nlp recommender, ratings and svd recommender.  However, more work needs to be done on the functionality of the pages and their ability to return the recommendations.  The NLP recommender is up-to-date but the SVD recommender takes a long time to run because it fits and predicts a whole new model based on the user's input.  If I can find a cluster for the new user, that should shorten the run time considerably.  I also intend to add a page for the market basket analysis that will suggest products based on the association rules for each cluster.  More to follow.
-
-![FLASK app](https://github.com/melodygr/grocery_recommendation/blob/main/Images/svd_page_screenshot.png "FLASK app")
 
 
 ### Conclusions  
