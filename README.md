@@ -1,4 +1,4 @@
-🛒 Grocery Product Recommendation System
+# 🛒 Grocery Product Recommendation System
 
 A smart grocery recommendation system that helps users discover products they’ll love! 
 
