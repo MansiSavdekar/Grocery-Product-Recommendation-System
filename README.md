@@ -1,13 +1,8 @@
 # 🛒 Grocery Product Recommendation System
 
-A smart grocery recommendation system that helps users discover products they’ll love! 
+Personalized grocery suggestions with Market Basket Analysis (Apriori Algorithm) & Collaborative Filtering.
 
-Combines Market Basket Analysis and Collaborative Filtering for personalized recommendations.
-
-Discover what to buy, based on your shopping history and similar customers’ habits!
-
-
-🔗 Dataset
+## Dataset
 
 https://www.kaggle.com/datasets/heeraldedhia/groceries-dataset
 
@@ -18,22 +13,48 @@ Contains transactional data of grocery purchases.
 Each transaction represents items bought together by a customer.
 
 
-🌈 Features at a Glance
+## Recommendation Techniques
+### 1. Market Basket Analysis (Apriori Algorithm)
 
-🔹 Market Basket Analysis: Uses the Apriori algorithm to find frequent itemsets. Generates association rules to recommend products that are often bought together.
+Market Basket Analysis is a data mining technique used to find patterns of items that are frequently bought together. In this project, we use the Apriori algorithm to:
 
-🔹 Collaborative Filtering: Personalized suggestions based on similar users. Provides personalized recommendations based on user similarity.	
+Identify frequent itemsets from transaction data.
 
-🔹 Combines Market Basket Analysis and Collaborative Filtering for more accurate and personalized suggestions.	
+Generate association rules to recommend products often purchased together.
 
-🔹 Modern Web UI, Searchable dropdown and typeahead autocomplete for easy product selection. Visual badges like 🔥 Best Match and 👍 Good Match for recommendations.
+Help users discover related items they may not have thought to buy.
 
+Example:
+If a user buys milk, the system may recommend bread or butter because these items frequently appear together in transactions.
 
-🗂️ Project Structure
+### 2. Collaborative Filtering
+
+Collaborative Filtering is a personalized recommendation technique that suggests products based on the preferences and behaviors of similar users. It works by:
+
+Comparing users’ purchase histories to find similar users.
+
+Recommending items that those similar users have bought but the current user hasn’t.
+
+Improving personalization and helping users discover new items.
+
+Example:
+If user A and user B have bought mostly the same items, and user B also bought olive oil, the system may recommend olive oil to user A.
+
+### 3. Hybrid Recommendation Engine
+
+This project combines Market Basket Analysis and Collaborative Filtering to create a hybrid recommendation system:
+
+Market Basket Analysis ensures users see products frequently bought together.
+
+Collaborative Filtering adds a personalized touch, suggesting items based on similar users.
+
+Together, this improves accuracy, relevance, and user satisfaction.
+
+## Project Structure
 
 ![Grocery Recommendation System Flow](Grocery_Recommender.png)
 
-🛠️ Tech Stack
+## Tech Stack
 
 1) Python 3.11 
 
@@ -48,7 +69,7 @@ Each transaction represents items bought together by a customer.
 6) Mlxtend (Apriori Algorithm) 
 
 
-🚀 Future Enhancements
+## Future Enhancements
 
 1) User login & purchase history tracking
 
@@ -61,7 +82,7 @@ Each transaction represents items bought together by a customer.
 5) Personalized dashboards & analytics
 
 
-👨‍💻 Author
+## Author
 
 Mansi Savdekar
 
